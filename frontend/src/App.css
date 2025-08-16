@@ -31,6 +31,7 @@ color:white;
   padding-inline: 3rem;
   height: 80vh;
   align-items: center;
+  
 }
 
 .landingMainContainer>div:nth-child(1) {
@@ -85,4 +86,15 @@ justify-content: center;
   height: auto;
   border-radius: 20px;
 
+}
+
+.landingMainContainer img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.landingMainContainer > div {
+  flex: 1 1 100%;  /* Mobile pe full width le */
+  text-align: center;
 }
