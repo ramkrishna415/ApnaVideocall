@@ -1,4 +1,4 @@
-.landingPageContainer{
+/* .landingPageContainer{
   width: 100vw;
   height: 100vh;
 background: url("./background.png");
@@ -6,7 +6,19 @@ background-repeat: no-repeat;
 background-size: cover;
 color:white;
 
+} */
+.landingPageContainer {
+  width: 100%;
+  min-height: 100vh; /* Purani height: 100vh ko hataya */
+  height: auto;
+  background: url("./background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom; /* Background image image ke sath smooth set ho */
+  color: white;
+  padding-bottom: 2rem; /* Niche thodi extra space ke liye */
 }
+
 .landingPageContainer nav{
   padding-inline: 1.2rem;
   padding-block: 1.6rem;
@@ -139,7 +151,7 @@ justify-content: center;
   /* 4. Image ko strict responsive width di aur fixed vh hataya */
   .landingMainContainer>div:nth-child(2) img {
     height: auto !important; 
-    width: 80vw !important; 
+    width: 80vw !important;
     max-width: 290px !important; 
     margin: 0 auto;
   }
